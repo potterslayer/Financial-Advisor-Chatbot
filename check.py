@@ -6,15 +6,9 @@ load_dotenv()
 import logging
 logging.basicConfig(level=logging.INFO)
 
-# mongo_url = os.getenv("MONGO_URL")
-# db = os.getenv("DB_NAME")
-#collection_name1 = os.getenv("COLLECTION_NAME1")
-#collection_name = os.getenv("COLLECTION_NAME")
-#collection_name_unregistered = os.getenv("COLLECTION_NAME_UNREGISTERED")
-
 mongo_url = os.getenv("MONGO_URL")
 dbName = 'neoWorldLogger'
-client = MongoClient(mongo_url))
+client = MongoClient(mongo_url)
 db = client[dbName]
 
 
