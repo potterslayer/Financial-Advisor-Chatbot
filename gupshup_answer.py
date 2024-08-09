@@ -79,7 +79,7 @@ def gupshup_api():
                      logging.info(mobile_number)
                      url = 'https://api.gupshup.io/wa/app/{}/msg/{}/read'.format(app_id,payload_id)
                      logging.info({'url':url})
-                     headers = {"apikey": "kt9miwbzwmsdteuebwfcb58avsnkbanm"}
+                     headers = {"apikey": Gupshup_API_KEY}
                      logging.info("just before request")    
 
                      response = requests.put(url, headers=headers)
